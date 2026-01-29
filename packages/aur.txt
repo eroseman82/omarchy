@@ -14,6 +14,7 @@ brightnessctl
 btop
 btrfs-progs
 clang
+claude-code
 cups
 cups-browsed
 cups-filters
@@ -150,6 +151,7 @@ ufw
 ufw-docker
 unzip
 usage
+uv
 uwsm
 waybar
 wayfreeze

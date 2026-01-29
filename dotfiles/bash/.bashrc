@@ -9,13 +9,25 @@ source ~/.local/share/omarchy/default/bash/rc
 #
 # Make an alias for invoking commands you use constantly
 # alias p='python'
-alias y='yazi'
+# alias y='yazi'
 alias snapshot='~/Suppliment/scripts/snapshot.sh'
-function y() {
-local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-yazi "$@" --cwd-file="$tmp"
-if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-builtin cd -- "$cwd"
-fi
-rm -f -- "$tmp"
+alias v='nvim'
+
+y() {
+  local tmp cwd
+
+  # Portable mktemp on Linux
+  tmp="$(mktemp -t yazi-cwd.XXXXXX)" || return 1
+
+  # Run yazi and let it write the chosen cwd to the temp file
+  yazi "$@" --cwd-file="$tmp"
+
+  # Read it and cd if it changed
+  cwd="$(cat -- "$tmp")"
+  if [[ -n "$cwd" && "$cwd" != "$PWD" ]]; then
+    cd -- "$cwd" || return
+  fi
+
+  rm -f -- "$tmp"
 }
+
