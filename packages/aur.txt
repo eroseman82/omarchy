@@ -40,6 +40,7 @@ fzf
 ghostty
 git
 github-cli
+gnome-boxes
 gnome-calculator
 gnome-disk-utility
 gnome-keyring

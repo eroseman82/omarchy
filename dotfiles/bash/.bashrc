@@ -9,7 +9,6 @@ source ~/.local/share/omarchy/default/bash/rc
 #
 # Make an alias for invoking commands you use constantly
 # alias p='python'
-# alias y='yazi'
 alias snapshot='~/Suppliment/scripts/snapshot.sh'
 alias v='nvim'
 
@@ -31,3 +30,4 @@ y() {
   rm -f -- "$tmp"
 }
 
+fastfetch
