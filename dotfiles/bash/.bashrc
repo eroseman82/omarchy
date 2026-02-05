@@ -19,8 +19,13 @@ eval "$(keychain --eval --agents ssh id_ed25519)"
 
 # SSH PUSH FOLDER OR FILE
 push() {
-  scp -r "$1" eric@31.97.218.42:~/linux/
+  rsync -avz --progress "$1" eric@31.97.218.42:~/linux/
 }
+pull() {
+  rsync -avz --progress eric@31.97.218.42:~/mac/"$1" .
+}
+
+
 
 # YAZI
 y() {
