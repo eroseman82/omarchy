@@ -19,6 +19,7 @@ cups
 cups-browsed
 cups-filters
 cups-pdf
+dnsmasq
 docker
 docker-buildx
 docker-compose
@@ -67,6 +68,7 @@ inxi
 iwd
 jq
 kdenlive
+keychain
 kvantum-qt5
 lazydocker
 lazygit
@@ -122,6 +124,7 @@ power-profiles-daemon
 python-gobject
 python-poetry-core
 python-terminaltexteffects
+qemu-full
 qt5-wayland
 ripgrep
 ruby
@@ -154,6 +157,8 @@ unzip
 usage
 uv
 uwsm
+virt-manager
+virt-viewer
 waybar
 wayfreeze
 whois

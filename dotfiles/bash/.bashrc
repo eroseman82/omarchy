@@ -11,7 +11,18 @@ source ~/.local/share/omarchy/default/bash/rc
 # alias p='python'
 alias snapshot='~/Suppliment/scripts/snapshot.sh'
 alias v='nvim'
+alias vm='virt-manager'
+alias eric='ssh eric@31.97.218.42'
 
+# SSH agent persistence (keychain)
+eval "$(keychain --eval --agents ssh id_ed25519)"
+
+# SSH PUSH FOLDER OR FILE
+push() {
+  scp -r "$1" eric@31.97.218.42:~/linux/
+}
+
+# YAZI
 y() {
   local tmp cwd
 
