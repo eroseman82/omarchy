@@ -5,14 +5,23 @@
 # (don't mess with these directly, just overwrite them here!)
 source ~/.local/share/omarchy/default/bash/rc
 
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # Add your own exports, aliases, and functions here.
-#
 # Make an alias for invoking commands you use constantly
+
 # alias p='python'
 alias snapshot='~/Suppliment/scripts/snapshot.sh'
 alias v='nvim'
 alias vm='virt-manager'
 alias eric='ssh eric@31.97.218.42'
+
+
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# FUNCTIONS 
 
 # SSH agent persistence (keychain)
 eval "$(keychain --eval --agents ssh id_ed25519)"
@@ -25,6 +34,17 @@ pull() {
   rsync -avz --progress eric@31.97.218.42:~/mac/"$1" .
 }
 
+# STOW 
+stoww() {
+    local DOTFILES="$HOME/Suppliment/dotfiles"
+
+    if [ -z "$1" ]; then
+        echo "Usage: stowpkg <package>"
+        return 1
+    fi
+
+    (cd "$DOTFILES" && stow -t ~ -v "$1")
+}
 
 
 # YAZI
