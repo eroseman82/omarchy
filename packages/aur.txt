@@ -101,6 +101,7 @@ noto-fonts-emoji
 noto-fonts-extra
 nss-mdns
 nvidia-open-dkms
+nvidia-prime
 nvidia-utils
 obs-studio
 obsidian
@@ -127,6 +128,7 @@ python-terminaltexteffects
 qemu-full
 qt5-wayland
 ripgrep
+rsync
 ruby
 rust
 satty
@@ -137,14 +139,17 @@ snapper
 sof-firmware
 spotify
 starship
+steam
 stow
 sudo
 sushi
 swaybg
 swayosd
 system-config-printer
+tailscale
 tldr
 tobi-try
+tradingview-bin-latest
 tree-sitter-cli
 ttf-cascadia-mono-nerd
 ttf-ia-writer
@@ -159,6 +164,7 @@ uv
 uwsm
 virt-manager
 virt-viewer
+vulkan-tools
 waybar
 wayfreeze
 whois
