@@ -31,7 +31,7 @@ alias pifi='ssh eric@raspy'
 # SSH agent persistence (keychain)
 eval "$(keychain --eval --agents ssh id_ed25519)"
 
-# SSH PUSH FOLDER OR FILE
+# SSH PUSH FOLDER OR FILE TO HOSTINGER 
 push() {
   rsync -avz --progress "$1" eric@31.97.218.42:~/linux/
 }
@@ -52,6 +52,10 @@ stoww() {
     (cd "$DOTFILES" && stow -t ~ -v "$1")
 }
 
+# PUSH TO RASPY 
+pipush() {
+  rsync -av "$@" eric@192.168.1.40:/home/eric/Srv/linux/
+}
 
 # YAZI
 y() {
