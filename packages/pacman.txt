@@ -147,6 +147,7 @@ swaybg
 swayosd
 system-config-printer
 tailscale
+television
 tldr
 tobi-try
 tradingview-bin-latest
