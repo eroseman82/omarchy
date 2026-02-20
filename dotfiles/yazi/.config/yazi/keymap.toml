@@ -1,0 +1,14 @@
+[mgr]
+prepend_keymap = [
+  # Goto
+  { on = [ "g", "h" ],       run = "cd ~",             desc = "Go home" },
+  { on = [ "g", "." ],       run = "cd ~/.config",     desc = "Goto ~/.config" },
+  { on = [ "g", "d" ],       run = "cd ~/Downloads",   desc = "Goto ~/Downloads" },
+  { on = [ "g", "<Space>" ], run = "cd --interactive", desc = "Jump interactively" },
+
+  # Raspy-specific
+  { on = [ "g", "s" ],       run = "cd ~/Suppliment/",    desc = "Goto Suppliment" },
+  { on = [ "g", "n" ],       run = "cd ~/.config/nvim",desc = "Goto nvim config" },
+  { on = [ "g", "y" ],       run = "cd ~/.config/hypr/",desc = "Goto hypr config" },
+  { on = [ "g", "p" ],       run = "cd ~/.dev/",desc = "Goto dev" },
+]
