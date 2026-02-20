@@ -18,7 +18,7 @@ alias snapshot='~/Suppliment/scripts/snapshot.sh'
 alias v='nvim'
 alias vm='virt-manager'
 alias eric='ssh eric@31.97.218.42'
-alias claude='ssh claude@31.97.218.42'
+# alias claud='ssh claude@31.97.218.42'
 alias pi='ssh eric@192.168.1.40'
 alias pifi='ssh eric@raspy'
 
