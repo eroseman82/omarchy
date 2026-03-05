@@ -26,6 +26,10 @@ alias uclaude='sudo pacman -Syu claude-coode'
 alias mongosh='docker exec -it mongodb mongosh --username admin --password changeme --authenticationDatabase admin main'
 alias tnew='tmux new -s'
 
+# UPDATING
+alias codex.update='npm install -g @openai/codex'
+alias claude.update='npm install -g @anthropic-ai/claude-code'
+
 # FUNCTIONS 
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
