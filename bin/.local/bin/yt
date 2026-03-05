@@ -1,0 +1,3 @@
+#!/bin/bash
+read -p "paste link: " url
+uv run --project /home/eric/.dev/yt /home/eric/.dev/yt/main.py "$url"

@@ -87,3 +87,6 @@ fi
 
 fastfetch
 
+
+# read-log shortcut
+alias rl='uv run read-log'

@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+base_dir="/home/eric/.dev/sandbox"
+
+mkdir -p "$base_dir"
+
+max_num=0
+
+shopt -s nullglob
+for path in "$base_dir"/codex_*; do
+  [[ -d "$path" ]] || continue
+
+  name="$(basename "$path")"
+  suffix="${name#codex_}"
+
+  if [[ "$suffix" =~ ^[0-9]+$ ]]; then
+    num=$((10#$suffix))
+    if (( num > max_num )); then
+      max_num=$num
+    fi
+  fi
+done
+shopt -u nullglob
+
+next_num=$((max_num + 1))
+printf -v next_dir "%s/codex_%02d" "$base_dir" "$next_num"
+
+mkdir -p "$next_dir/input"
+touch "$next_dir/readme.md"
+
+cd "$next_dir"
+printf '%s\n' "$next_dir"
+exec "${SHELL:-/bin/bash}"
