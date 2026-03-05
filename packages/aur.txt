@@ -13,6 +13,7 @@ bolt
 brightnessctl
 btop
 btrfs-progs
+chromium
 clang
 claude-code
 cups
@@ -68,6 +69,7 @@ inxi
 iwd
 jq
 kdenlive
+kernel-modules-hook
 keychain
 kvantum-qt5
 lazydocker
@@ -94,6 +96,7 @@ mariadb-libs
 mise
 mpv
 nautilus
+nautilus-python
 neovim
 noto-fonts
 noto-fonts-cjk
@@ -105,10 +108,10 @@ nvidia-prime
 nvidia-utils
 obs-studio
 obsidian
-omarchy-chromium
 omarchy-keyring
 omarchy-nvim
 omarchy-walker
+openai-codex
 opencode
 pamixer
 pinta
@@ -149,6 +152,7 @@ system-config-printer
 tailscale
 television
 tldr
+tmux
 tobi-try
 tradingview-bin-latest
 tree-sitter-cli
@@ -167,13 +171,13 @@ virt-manager
 virt-viewer
 vulkan-tools
 waybar
-wayfreeze
 whois
 wireless-regdb
 wiremix
 wireplumber
 wl-clipboard
 woff2-font-awesome
+wtfutil
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-terminal-exec

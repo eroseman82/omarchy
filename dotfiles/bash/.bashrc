@@ -19,10 +19,12 @@ alias v='nvim'
 alias vm='virt-manager'
 alias eric='ssh eric@31.97.218.42'
 # alias claud='ssh claude@31.97.218.42'
-alias pi='ssh eric@192.168.1.40'
+# alias pi='ssh eric@192.168.1.40'
 alias pifi='ssh eric@raspy'
+alias uclaude='sudo pacman -Syu claude-coode'
 
-
+alias mongosh='docker exec -it mongodb mongosh --username admin --password changeme --authenticationDatabase admin main'
+alias tnew='tmux new -s'
 
 # FUNCTIONS 
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -84,3 +86,4 @@ fi
 
 
 fastfetch
+
