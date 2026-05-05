@@ -1,0 +1,12 @@
+[mgr]
+ratio = [1, 1, 6]
+
+[opener]
+chrome = [
+  { run = 'open -a "Google Chrome" "$@"', desc = "Chrome", for = "macos" }
+]
+
+[open]
+prepend_rules = [
+  { mime = "text/html", use = [ "chrome" ] }
+]
