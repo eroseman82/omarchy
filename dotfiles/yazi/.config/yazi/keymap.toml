@@ -11,4 +11,6 @@ prepend_keymap = [
   { on = [ "g", "n" ],       run = "cd ~/.config/nvim",desc = "Goto nvim config" },
   { on = [ "g", "y" ],       run = "cd ~/.config/hypr/",desc = "Goto hypr config" },
   { on = [ "g", "p" ],       run = "cd ~/.dev/",desc = "Goto dev" },
+  { on = [ "g", "b" ],       run = "cd ~/.config/omarchy/current/theme/backgrounds",desc = "Goto Backgrounds" },
 ]
+
